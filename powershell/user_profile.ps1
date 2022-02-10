@@ -14,4 +14,3 @@ Set-PSReadLineOption -PredictionSource History
 # Alias
 Set-Alias vim nvim
 Set-Alias make mingw32-make
-Set-Alias min "C:\Users\muazw\AppData\Local\min\min.exe"
