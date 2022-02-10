@@ -1,4 +1,4 @@
 configstore
 scoop
-nvim\autoload
-nvim\plugged
+nvim/autoload/
+nvim/plugged/
