@@ -16,7 +16,6 @@ set shortmess+=F            " to get rid of the file name displayed in the comma
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
-" set mouse=v               " middle-click paste with 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set tabstop=4               " number of columns occupied by a tab 
@@ -25,17 +24,15 @@ set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
 set number                  " add line numbers
-set wildmenu                " completions menu   
 set mouse=a                 " enable mouse click
 set clipboard+=unnamedplus  " using system clipboard
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
 set splitright splitbelow   " open new split panes to right and below
-set completeopt=menu,menuone,noselect
+" set wildmenu              " completions menu   
 " set shell=pwsh            " set default terminal to powershell
-" set path+=**                " simple fuzzy finder
+" set path+=**              " simple fuzzy finder
 filetype plugin indent on   " allow auto-indenting depending on file type
-"syntax on                  " syntax highlighting
 
 " Color Schemes
 " -------------

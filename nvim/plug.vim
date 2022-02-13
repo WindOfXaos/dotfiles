@@ -16,4 +16,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'navarasu/onedark.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-fugitive'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
