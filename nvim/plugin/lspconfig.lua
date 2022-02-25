@@ -82,6 +82,10 @@ require'lspconfig'.vimls.setup{
         on_attach = on_attach,
 }
 
+require'lspconfig'.tsserver.setup{
+        on_attach = on_attach,
+}
+
 -- TODO: fix glsl language server
 lspconfig.glslangValidator.setup{
     on_attach = on_attach
@@ -92,6 +96,14 @@ require'lspconfig'.clangd.setup{
     cmd = { "clangd" },
     filetypes = { "c", "cpp", "objc", "objcpp"},
     single_file_support = true
+}
+
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+require'lspconfig'.html.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
 }
 
 require'lspconfig'.sumneko_lua.setup{
@@ -105,5 +117,3 @@ require'lspconfig'.sumneko_lua.setup{
         },
       },
 }
-
-require'lspconfig'.tsserver.setup{}
