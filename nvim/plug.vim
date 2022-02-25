@@ -19,4 +19,6 @@ Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'tikhomirov/vim-glsl'
+Plug 'timtro/glslView-nvim'
 call plug#end()

@@ -1,3 +1,15 @@
+local configs = require('lspconfig.configs')
+local lspconfig = require('lspconfig')
+if not configs.glslangValidator then
+  configs.glslangValidator = {
+    default_config = {
+      cmd = {'C:/Users/muazw/glslValidator/bin/glslangValidator.exe'};
+      filetypes = {'fs', 'vs'};
+      root_dir = lspconfig.util.root_pattern('.vs', '.fs')
+    },
+  }
+end
+
 -- UI Customization
 -- ----------------
 -- Diagnostics
@@ -25,7 +37,6 @@ vim.o.updatetime = 250
 vim.cmd [[
   autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})
 ]]
-
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -71,6 +82,11 @@ require'lspconfig'.vimls.setup{
         on_attach = on_attach,
 }
 
+-- TODO: fix glsl language server
+lspconfig.glslangValidator.setup{
+    on_attach = on_attach
+}
+
 require'lspconfig'.clangd.setup{
     on_attach = on_attach,
     cmd = { "clangd" },
@@ -89,3 +105,5 @@ require'lspconfig'.sumneko_lua.setup{
         },
       },
 }
+
+require'lspconfig'.tsserver.setup{}

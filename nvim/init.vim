@@ -41,3 +41,5 @@ if (has("termguicolors"))
 endif
 
 let &fcs='eob: '             " hide ending tildes ~
+
+autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
