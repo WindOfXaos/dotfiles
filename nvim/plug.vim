@@ -21,4 +21,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'timtro/glslView-nvim'
+Plug 'folke/zen-mode.nvim'
+Plug 'folke/twilight.nvim'
 call plug#end()
