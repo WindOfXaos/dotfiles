@@ -23,4 +23,5 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'timtro/glslView-nvim'
 Plug 'folke/zen-mode.nvim'
 Plug 'folke/twilight.nvim'
+Plug 'davidgranstrom/nvim-markdown-preview'
 call plug#end()
