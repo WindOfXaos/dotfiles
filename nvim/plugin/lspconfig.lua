@@ -110,6 +110,8 @@ require'lspconfig'.cssls.setup {
     on_attach = on_attach,
 }
 
+require'lspconfig'.graphql.setup{}
+
 require'lspconfig'.sumneko_lua.setup{
     on_attach = on_attach,
     settings = {

@@ -18,17 +18,19 @@ set showmatch               " show matching
 set ignorecase              " case insensitive 
 set hlsearch                " highlight search 
 set incsearch               " incremental search
-set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set tabstop=2               " number of columns occupied by a tab 
+set shiftwidth=2            " width for autoindents
 set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
-set autoindent              " indent a new line the same amount as the line just typed
+set smartindent             " indent a new line the same amount as the line just typed
+autocmd FileType cpp set tabstop=4 shiftwidth=4
+autocmd FileType glsl set tabstop=4 shiftwidth=4
 set number                  " add line numbers
 set mouse=a                 " enable mouse click
 set clipboard+=unnamedplus  " using system clipboard
 set cursorline              " highlight current cursorline
 set ttyfast                 " Speed up scrolling in Vim
-set splitright splitbelow   " open new split panes to right and below
+" set splitright splitbelow   " open new split panes to right and below
+set laststatus=3
 " set wildmenu              " completions menu   
 " set shell=pwsh            " set default terminal to powershell
 " set path+=**              " simple fuzzy finder
