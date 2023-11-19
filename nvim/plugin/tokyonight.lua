@@ -14,7 +14,7 @@ vim.g.tokyonight_colors = {
 }
 
 vim.cmd[[
-    colorscheme tokyonight
+    "colorscheme tokyonight
 
     highlight DiagnosticVirtualTextError guibg=none
     highlight DiagnosticVirtualTextWarn  guibg=none

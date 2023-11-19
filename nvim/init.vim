@@ -24,7 +24,7 @@ set expandtab               " converts tabs to white space
 set smartindent             " indent a new line the same amount as the line just typed
 autocmd FileType cpp set tabstop=4 shiftwidth=4
 autocmd FileType glsl set tabstop=4 shiftwidth=4
-set number                  " add line numbers
+set relativenumber                  " add line numbers
 set mouse=a                 " enable mouse click
 set clipboard+=unnamedplus  " using system clipboard
 set cursorline              " highlight current cursorline
